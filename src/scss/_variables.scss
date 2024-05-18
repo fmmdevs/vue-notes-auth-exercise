@@ -2,12 +2,13 @@
 $primaryColor: #f00;
 $secondaryColor: #0f0;
 $bgColor: #00f;
+$radius: 25px;
 
 // Containers
 .container {
 
   background-color: bisque;
-  border-radius: 25px;
+  border-radius: $radius
 }
 
 

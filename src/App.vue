@@ -64,6 +64,11 @@ nav {
     padding: 30px;
     list-style: none;
 
+    li {
+
+      border-radius: $radius;
+    }
+
     li:hover {
       background-color: darkcyan;
     }
