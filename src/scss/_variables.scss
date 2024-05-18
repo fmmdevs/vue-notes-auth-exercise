@@ -1,0 +1,21 @@
+// Colors
+$primaryColor: #f00;
+$secondaryColor: #0f0;
+$bgColor: #00f;
+
+// Containers
+.container {
+
+  background-color: bisque;
+  border-radius: 25px;
+}
+
+
+@mixin theme($theme: lightgray) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+  width: 70%;
+  margin: 30px auto;
+  min-width: 450px;
+  padding: 10px;
+}

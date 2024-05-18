@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld msg="Welcome to Your Notes App!" />
+    <img alt="Notes App logo" src="../assets/note.jpeg">
+
   </div>
 </template>
 
@@ -16,3 +17,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+img {
+  width: 95%;
+  margin: auto;
+}
+</style>
