@@ -6,9 +6,12 @@ $radius: 25px;
 
 // Containers
 .container {
-
+  h1{
+    margin: 50px ;
+  }
   background-color: bisque;
-  border-radius: $radius
+  border-radius: $radius;
+  height: 72vh;
 }
 
 

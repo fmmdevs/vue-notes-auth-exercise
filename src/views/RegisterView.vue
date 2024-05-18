@@ -1,7 +1,7 @@
 <template>
 
     <form class="container">
-        <h1>Register View</h1>
+        <h1>Register</h1>
 
         <div class="mb-3">
             <label for="name" class="form-label">Full name</label>

@@ -20,7 +20,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 img {
-  width: 95%;
-  margin: auto;
+  width: 60vh;
+  margin: 40px auto;
 }
 </style>
