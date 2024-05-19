@@ -1,8 +1,8 @@
 <template>
     <div v-if="!store.userData.logged" class="container">
 
-        <h1>Login</h1>
         <form>
+            <h1>Login</h1>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -19,7 +19,7 @@
         </form>
     </div>
 
-    <div v-if="store.userData.logged" class="container">
+    <div v-if="store.userData.logged" class="logged">
         <h1>{{ store.userData.email }}</h1>
         <h2>Autenticado</h2>
         <!-- <h3>Bear Token : {{ store.userData.jwt }}</h3> -->
@@ -45,7 +45,13 @@ const login = async () => {
 </script>
 
 <style lang="scss" scoped>
-.container {
-    @include theme(lightgreen)
+.logged {
+    flex-direction: column;
+    background-color: mediumseagreen;
+    width: 90%;
+    @include flex();
+    margin: auto;
+    padding: 20px;
+    border-radius: $radius;
 }
 </style>

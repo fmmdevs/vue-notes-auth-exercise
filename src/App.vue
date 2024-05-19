@@ -1,40 +1,14 @@
 <template>
-  <nav>
-    <ul>
+  <Nav-Bar></Nav-Bar>
 
-      <li class="col hov">
-        <router-link :to='{ name: "home" }'>Home</router-link>
-      </li>
-      <li class="col" v-show="store.userData.logged">
-        <router-link :to='{ name: "notes" }'>My Notes</router-link>
-      </li>
-      <li class="col" v-show="!store.userData.logged">
-        <router-link :to='{ name: "register" }'>Register</router-link>
-      </li>
-      <li class="col" v-show="!store.userData.logged">
-        <router-link :to='{ name: "login" }'>Login</router-link>
-      </li>
-
-      <li class="col" v-show="store.userData.logged">
-        <router-link :to='{ name: "newNote" }'>New Note</router-link>
-      </li>
-
-      <li class="col" v-show="store.userData.logged">
-        <router-link :to='{ name: "logout" }'>Logout</router-link>
-      </li>
-
-      <li class="col">
-        <router-link :to='{ name: "about" }'>About</router-link>
-      </li>
-    </ul>
-  </nav>
   <router-view />
+
   <footer>&copy; fmm.devs 2024</footer>
 </template>
 
 <script lang="ts" setup>
-import { useAuthStore } from './store/auth';
-const store = useAuthStore()
+import NavBar from './components/NavBar.vue';
+
 </script>
 
 <style lang="scss">
@@ -47,13 +21,18 @@ const store = useAuthStore()
 }
 
 nav {
-  background-color: lightblue;
+  // background-color: lightblue;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
 
     &.router-link-exact-active {
+      color: #42b983;
+    }
+
+    &:hover {
       color: #42b983;
     }
   }
@@ -69,9 +48,7 @@ nav {
       border-radius: $radius;
     }
 
-    li:hover {
-      background-color: darkcyan;
-    }
+
   }
 }
 

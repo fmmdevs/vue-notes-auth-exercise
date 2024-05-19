@@ -21,7 +21,7 @@
                 </div>
                 <button class="btn btn-danger w-50 mx-auto mt-4" @click.prevent="deleteNote(note.id)">Delete</button>
                 <button v-show="!toggleUpdate" class="btn btn-warning w-50 mx-auto mt-1"
-                    @click.prevent="togglerUpdate">Update Dialog</button>
+                    @click.prevent="togglerUpdate">Edit Note</button>
 
                 <form v-show="toggleUpdate">
                     <div class="mb-3">

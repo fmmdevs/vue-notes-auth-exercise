@@ -6,12 +6,15 @@ $radius: 25px;
 
 // Containers
 .container {
-  h1{
-    margin: 50px ;
-  }
-  background-color: bisque;
+   
+ padding: 50px;
+  background-color: lightgray;
   border-radius: $radius;
-  height: 72vh;
+  height: 540px;
+  max-width: 500px;
+  img{
+    margin: 50px auto;
+  }
 }
 
 
@@ -22,4 +25,11 @@ $radius: 25px;
   margin: 30px auto;
   min-width: 450px;
   padding: 10px;
+}
+
+@mixin flex(){
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

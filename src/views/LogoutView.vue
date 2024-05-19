@@ -12,4 +12,11 @@ store.logout()
 
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.container {
+    background-color: darkgray;
+    height: 30vh;
+    color: whitesmoke;
+    @include flex();
+}
+</style>

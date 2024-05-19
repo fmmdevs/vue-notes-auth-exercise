@@ -9,8 +9,9 @@ export const useAuthStore = defineStore('auth', {
             logged: false,
             email: "",
             notes:[] as INote[]
-            
-            }
+            },
+            // for showing search bar only in /notes
+            inNotes:false
            
         }
     },

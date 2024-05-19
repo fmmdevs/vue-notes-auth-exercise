@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="container">
     <HelloWorld msg="Welcome to Your Notes App!" />
     <img alt="Notes App logo" src="../assets/note.jpeg">
 
@@ -20,7 +20,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 img {
-  width: 60vh;
-  margin: 40px auto;
+  width: 60%;
+  margin: auto;
 }
 </style>

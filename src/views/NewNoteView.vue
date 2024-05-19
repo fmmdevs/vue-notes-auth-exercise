@@ -1,7 +1,7 @@
 <template>
 
     <form>
-        <h1>New Note View</h1>
+        <h1>New Note</h1>
 
         <div class="mb-3">
             <textarea v-model="content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
