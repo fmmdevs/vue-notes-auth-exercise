@@ -1,5 +1,5 @@
 # ejercicio-auth-notes
-## ( :hammer: Front-End not Finished :art: )
+
 ## Project setup
 ```
 npm install
@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Demo
+![Demo](/public/demo.gif)
