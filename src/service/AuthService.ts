@@ -122,7 +122,7 @@ class AuthService{
         }
     }
 
-    async postNote(newContent: string, jwt:string) {
+    async postNote(newTitle:string, newContent: string, jwt:string) {
         
         try {
             
@@ -135,7 +135,8 @@ class AuthService{
                     'Authorization':'Bearer '+jwt
                 },
                 body: JSON.stringify({
-                    content: newContent
+                    content: newContent,
+                    title: newTitle
                 })
              })
             
@@ -228,7 +229,7 @@ class AuthService{
         }
     }
 
-    async updateNote(idNote: number, newContent: string) {
+    async updateNote(idNote: number, newTitle:string, newContent: string) {
         try {
             const store = useAuthStore()
             const updateUrl = this.url + "/update/" + idNote
@@ -241,7 +242,8 @@ class AuthService{
                     'Authorization': 'Bearer '+store.userData.jwt
                     },
                     body: JSON.stringify({
-                     content: newContent
+                        content: newContent,
+                        title: newTitle
                  })
                     
                 }

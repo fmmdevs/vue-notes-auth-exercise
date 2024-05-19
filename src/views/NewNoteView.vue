@@ -4,7 +4,13 @@
         <h1>New Note</h1>
 
         <div class="mb-3">
-            <textarea v-model="content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="title" class="fs-5 text mb-2">Title</label>
+            <textarea v-model="title" class="form-control" id="title" rows="3" required></textarea>
+
+            <label for="content" class="fs-5 text mb-2">Content</label>
+
+            <textarea v-model="content" class="form-control" id="content" rows="8" required></textarea>
+
             <button class="btn btn-primary mt-3" @click.prevent="addNote">Add Note</button>
         </div>
     </form>
@@ -19,13 +25,15 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 let content = ref("")
+let title = ref("")
 const router = useRouter()
 
 const addNote = async () => {
 
     const service = new AuthService()
     const store = useAuthStore()
-    await service.postNote(content.value, store.userData.jwt)
+    await service.postNote(title.value, content.value, store.userData.jwt)
+    title.value = ""
     content.value = ""
     router.push({ name: 'notes' })
 
