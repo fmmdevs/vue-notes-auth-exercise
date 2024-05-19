@@ -1,4 +1,6 @@
 # ejercicio-auth-notes
+## Backend
+<a href="https://github.com/fmmdevs/notes-backend">Notes Backend</a>
 
 ## Project setup
 ```
