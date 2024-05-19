@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <HelloWorld msg="Welcome to Your Notes App!" />
+    <h1>Notes App Home</h1>
     <img alt="Notes App logo" src="../assets/note.jpeg">
 
   </div>
@@ -8,12 +8,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    HelloWorld,
   },
 });
 </script>
