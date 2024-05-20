@@ -28,5 +28,6 @@ export const useAuthStore = defineStore('auth', {
             this.userData.notes=[] as INote[]
         }
         
-    }
+    },
+    persist: true
 })
